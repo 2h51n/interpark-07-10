@@ -1,1 +1,60 @@
 @charset "utf-8";
+@media screen and (max-width:1024px){
+    .inner{
+        max-width: 760px;
+        padding: 0 20px;
+        border-bottom: 8px solid #f0f0f0;
+    }
+    .header{
+        border: none;
+    }
+    .header .inner{
+        height: 230px;
+        background-color: rgb(172, 211, 174);
+        padding: 15px 0;
+    }
+    .header-left{
+        width: 100%;
+    }
+    .logo{
+        width: 77px;
+        height: 18px;
+        padding-left: 15%;
+    }
+    .member-list{
+        display: none;
+    }
+    .mb-mypage{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .service-menu{
+        display: none;
+    }
+    .header-down{
+        justify-content: center;
+    }
+    .service-list li{
+        display: flex;
+        width: 48px;
+    }
+    .service-list li a{
+        font-size: 12px;
+        text-align: center;
+    }
+    .service-list li a img{
+        width: 48px;
+        height: 48px;
+        margin: 0;
+    }
+    .header-left{
+        flex: none;
+    }
+    .search{
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        transform: translate( -50% , -50%);
+    }
+}
