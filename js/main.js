@@ -1,13 +1,31 @@
-window.onload = function() {
-    // 상단의 마이페이지 버튼과 리스트를 변수에 저장
-    const mypageBt = document.getElementById('mypageBt');
-    const mypageList = document.getElementById('mypageList');
-    // 마이페이지 버튼에 마우스를 올렸을 때 리스트를 보여줌
-    mypageBt.onmouseenter = function() {
-        mypageList.style.display = 'block';
-    };
-    // 마이페이지 버튼에서 마우스를 뗐을 때 리스트를 숨김
-    mypageBt.onmouseleave = function() {
-        mypageList.style.display = 'none';
-    };
+window.onload = function(){
+    // 상단의 마이페이지리스트 기능
+  const mypageBt = document.querySelector(".mypage-bt")  
+  const mypageList = document.querySelector(".mypage-list")
+  mypageBt.addEventListener("click",function(){
+    mypageList.classList.toggle("showMypage")
+  })
+  // swiper ================
+  // 프로모션 스와퍼기능
+  const swPromotion = new Swiper(".sw-promotion" , {
+    slidesPerView :1,
+    spaceBetween:24,
+    breakpoints: {
+        480 : {
+            slidesPerView :2
+        },
+        760 : {
+            slidesPerView :2
+        }
+    },
+    navigation:{
+        nextEl:".promotion .sw-next",
+        prevEl:".promotion .sw-prev",
+    },
+    loop : true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  })
 };
