@@ -29,10 +29,10 @@ body {
   /* background-color: aquamarine; */
 }
 /* section 공동클래스*/
-.wrap > section{
-  padding: 30px 0 90px 0
+.wrap > section {
+  padding: 30px 0 90px 0;
 }
-.section-top{
+.section-top {
   text-align: center;
 }
 .section-top > h2 {
@@ -47,7 +47,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 /* 스와이퍼 네비게이션 버튼 */
-.sw-bt{
+.sw-bt {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -60,35 +60,32 @@ body {
   font-size: 0;
   cursor: pointer;
 }
-.sw-bt::before{
+.sw-bt::before {
   content: "";
   width: 8px;
   height: 16px;
-display: block;
-position: absolute;;
-top: calc(50% - 4px);
-left: calc(50% - 4px);
-background: url("../images/slider_arrow.svg") no-repeat center;
+  display: block;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+  background: url("../images/slider_arrow.svg") no-repeat center;
 }
-.sw-prev::before{
+.sw-prev::before {
   transform: scaleX(-100%);
 }
-.sw-prev{
+.sw-prev {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   z-index: 99;
 }
-.sw-next{
+.sw-next {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(50% , -50%);
+  transform: translate(50%, -50%);
   z-index: 99;
 }
 /* 플라잉배너 */
 /* 퀵메뉴 */
-
-
-
