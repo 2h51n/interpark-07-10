@@ -15,3 +15,12 @@
   width: 100%;
   height: auto;
 }
+/* pagenation */
+.sw-promotion-control {
+  position: relative;
+  text-align: center;
+  display: none;
+}
+.sw-promotion-pg {
+  height: 23px;
+}
