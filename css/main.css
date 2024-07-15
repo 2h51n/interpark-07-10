@@ -18,7 +18,13 @@ img {
   border: 0;
 }
 body {
-  font-family: "Pretendard", sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 /* 공통클래스 */
 .inner {
@@ -130,6 +136,15 @@ body {
   transform: translate(50%, -50%);
   z-index: 99;
 }
-
+/* Swiper 컨테이너 스타일 */
+.swiper-container {
+  width: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  flex: 0 0 auto;
+}
 /* 플라잉배너 */
 /* 퀵메뉴 */
