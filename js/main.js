@@ -5,8 +5,8 @@ window.onload = function () {
   mypageBt.addEventListener("click", function () {
     mypageList.classList.toggle("showMypage");
   });
-  // swiper ================
-  // 프로모션 스와퍼기능
+
+  // 프로모션 스와이퍼 기능
   const swPromotion = new Swiper(".sw-promotion", {
     slidesPerView: 1,
     spaceBetween: 24,
@@ -32,27 +32,29 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
-  // 쇼핑의 스와이퍼 기능 적용
+
+  // 쇼핑 스와이퍼 기능
   const swShopping = new Swiper(".sw-shopping", {
-    slidesPerView: 3,
+    slidesPerView: 1.1,
     grid: {
-      rows: 3,
+      rows: 1,
       fill: "row",
+    },
+    navigation: {
+      nextEl: ".shopping .sw-next",
+      prevEl: ".shopping .sw-prev",
+    },
+    loop: true,
+    pagination: {
+      el: ".sw-shopping-pg",
+      clickable: true,
     },
     spaceBetween: 10,
     breakpoints: {
-      900: {
-        spaceBetween: 32,
-        slidesPerView: 4,
-        grid: {
-          rows: 1,
-        },
-        slidesPerGroup: 3,
-      },
       1024: {
         spaceBetween: 32,
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
         grid: {
           rows: 1,
         },
@@ -64,6 +66,84 @@ window.onload = function () {
         grid: {
           rows: 1,
         },
+      },
+    },
+  });
+  // 투어 스와이퍼 기능
+  const swTour = new Swiper(".sw-tour", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    grid: {
+      rows: 4,
+      fill: "row",
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".tour .sw-next",
+      prevEl: ".tour .sw-prev",
+    },
+    pagination: {
+      el: ".sw-tour-pg",
+      clickable: true,
+    },
+    breakpoints: {
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 26,
+        slidesPerGroup: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerGroup: 4,
+      },
+    },
+  });
+  // 티켓 스와이퍼 기능
+  const swticket = new Swiper(".sw-ticket", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+    pagination: {
+      el: ".sw-ticket-pg",
+      clickable: true,
+    },
+    breakpoints: {
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 26,
+        slidesPerGroup: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerGroup: 4,
       },
     },
   });
