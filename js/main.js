@@ -109,14 +109,8 @@ window.onload = function () {
     },
   });
   // 티켓 스와이퍼 기능
-  const swticket = new Swiper(".sw-ticket", {
-    slidesPerView: 1.2,
-    spaceBetween: 10,
-    grid: {
-      rows: 1,
-      fill: "row",
-    },
-    loop: true,
+  const swTicket = new Swiper(".sw-ticket" ,{
+    loop:true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -125,26 +119,22 @@ window.onload = function () {
       nextEl: ".ticket .sw-next",
       prevEl: ".ticket .sw-prev",
     },
-    pagination: {
-      el: ".sw-ticket-pg",
-      clickable: true,
-    },
     breakpoints: {
-      800: {
+      480: {
+        spaceBetween: 10,
         slidesPerView: 2,
-        spaceBetween: 26,
-        slidesPerGroup: 2,
       },
       1024: {
+        spaceBetween: 32,
         slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
+      
       },
       1280: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-        slidesPerGroup: 4,
+        spaceBetween: 26,
+        slidesPerView:4,
+        
+      
       },
     },
-  });
+  })
 };
