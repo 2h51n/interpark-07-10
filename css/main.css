@@ -6,6 +6,7 @@
 @import url("shopping.css");
 @import url("tour.css");
 @import url("ticket.css");
+@import url("live.css");
 * {
   margin: 0;
   padding: 0;
@@ -132,6 +133,5 @@ body {
   transform: translate(50%, -50%);
   z-index: 99;
 }
-
 /* 플라잉배너 */
 /* 퀵메뉴 */

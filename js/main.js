@@ -109,8 +109,8 @@ window.onload = function () {
     },
   });
   // 티켓 스와이퍼 기능
-  const swTicket = new Swiper(".sw-ticket" ,{
-    loop:true,
+  const swTicket = new Swiper(".sw-ticket", {
+    loop: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -127,14 +127,37 @@ window.onload = function () {
       1024: {
         spaceBetween: 32,
         slidesPerView: 3,
-      
       },
       1280: {
         spaceBetween: 26,
-        slidesPerView:4,
-        
-      
+        slidesPerView: 4,
       },
     },
-  })
+  });
+// 라이브 스와이퍼 기능
+const swLive = new Swiper(".sw-live", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".live .sw-next",
+    prevEl: ".live .sw-prev",
+  },
+  breakpoints: {
+    480: {
+      spaceBetween: 10,
+      slidesPerView: 2,
+    },
+    1024: {
+      spaceBetween: 32,
+      slidesPerView: 3,
+    },
+    1280: {
+      spaceBetween: 26,
+      slidesPerView: 4,
+    },
+  },
+});
 };
