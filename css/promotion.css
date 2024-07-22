@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* 프로모션 */
+.promotion .inner {
+  /* 필요한 스타일을 여기에 추가하세요 */
+}
+.promotion .section-top {
+  display: none;
+}
+.sw-promotion a {
+  display: inline-block;
+  border-radius: 13px;
+  overflow: hidden; /* 여기에 추가된 부분 */
+}
+.sw-promotion a img {
+  width: 100%;
+  height: auto;
+}
+/* pagenation */
+.sw-promotion-control {
+  position: relative;
+  text-align: center;
+  display: none;
+}
+.sw-promotion-pg {
+  height: 23px;
+}
