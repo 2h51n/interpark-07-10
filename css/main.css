@@ -7,10 +7,13 @@
 @import url("tour.css");
 @import url("ticket.css");
 @import url("live.css");
+<<<<<<< HEAD
 @import url("books.css");
 @import url("event.css");
 @import url("footer.css");
 
+=======
+>>>>>>> 7c0ed2748ab34a3d1fd01fac6d378e07829a6c01
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +140,7 @@ body {
   transform: translate(50%, -50%);
   z-index: 99;
 }
+<<<<<<< HEAD
 /* 플라잉 베너 */
 .fix-banner {
   position: fixed;
@@ -179,3 +183,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+=======
+/* 플라잉배너 */
+/* 퀵메뉴 */
+>>>>>>> 7c0ed2748ab34a3d1fd01fac6d378e07829a6c01

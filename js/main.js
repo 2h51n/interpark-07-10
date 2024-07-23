@@ -1,4 +1,5 @@
 window.onload = function () {
+<<<<<<< HEAD
  // topbt기능
  const topBtn = document.querySelector("#gotop");
  topBtn.addEventListener("click", function (e) {
@@ -11,6 +12,8 @@ window.onload = function () {
      });
    }
  });
+=======
+>>>>>>> 7c0ed2748ab34a3d1fd01fac6d378e07829a6c01
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
@@ -149,8 +152,11 @@ window.onload = function () {
 // 라이브 스와이퍼 기능
 const swLive = new Swiper(".sw-live", {
   loop: true,
+<<<<<<< HEAD
   slidesPerView: 1.2,
   spaceBetween: 10,
+=======
+>>>>>>> 7c0ed2748ab34a3d1fd01fac6d378e07829a6c01
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -174,6 +180,7 @@ const swLive = new Swiper(".sw-live", {
     },
   },
 });
+<<<<<<< HEAD
 // 도서 스와이퍼 기능
 const swBooks = new Swiper(".sw-books", {
   loop: true, // 무한 루프
@@ -239,4 +246,6 @@ const swEvent = new Swiper(".sw-event", {
   },
 
 });
+=======
+>>>>>>> 7c0ed2748ab34a3d1fd01fac6d378e07829a6c01
 };
