@@ -1,4 +1,16 @@
 window.onload = function () {
+ // topbt기능
+ const topBtn = document.querySelector("#gotop");
+ topBtn.addEventListener("click", function (e) {
+   e.preventDefault();
+   if (window.scrollY !== 0) {
+     // 현재 스크롤 위치가 0이 아니면 top으로 스크롤
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+   }
+ });
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
@@ -216,15 +228,15 @@ const swEvent = new Swiper(".sw-event", {
       spaceBetween: 10, // 화면 너비가 480px 이상일 때 슬라이드 간 간격
       slidesPerView: 2, // 2개의 슬라이드가 보임
     },
-    768: {
+    1024: {
       spaceBetween: 20, // 화면 너비가 768px 이상일 때 슬라이드 간 간격
       slidesPerView: 3, // 3개의 슬라이드가 보임
     },
-    1024: {
+    1280: {
       spaceBetween: 30, // 화면 너비가 1024px 이상일 때 슬라이드 간 간격
       slidesPerView: 4, // 4개의 슬라이드가 보임
     },
   },
-  
+
 });
 };
